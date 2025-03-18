@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hasta RekhaGPT</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- AOS Library for Scroll Animations -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-container">
+  
+      <!-- Logo on the left -->
+      <div class="logo">HastaRekha<span class="highlight">GPT</span></div>
+  
+      <!-- Centered navigation links -->
+      <nav class="nav-links" id="nav-links">
+        <a href="#">Free Palm Analysis</a>
+        <a href="#">Pricing</a>
+        <a href="#">How it Works?</a>
+        <a href="#">Learn Palmistry</a>
+        <a href="#">FAQs</a>
+      </nav>
+  
+      <!-- Login button on the right -->
+      <button class="btn-login">Login</button>
+  
+      <!-- Hamburger menu for mobile -->
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+      </div>
+  
+    </div>
+  </header>
+  
+  
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-container">
+  
+      <!-- HERO IMAGE at the TOP for MOBILE -->
+      <div class="hero-image" >
+        <img src="Untitled design (3).png" alt="Vedic Sages" />
+      </div>
+  
+      <!-- Hero Content -->
+      <div class="hero-content" data-aos="fade-up">
+        <p class="subheading">Curious about your future? Get your personalized palmistry reading today!</p>
+        <h1 class="main-heading">
+          Get your own <span class="highlight"><br>AI Palmist</span>
+        </h1>
+        <p class="description">
+          Gain insights into Love, Career, Health, and Life with our AI-powered Palmistry readings.
+Explore the secrets held within your palm lines and uncover the factors shaping your destiny through personalized analysis.
+        </p>
+        <p class="description">
+          Start your journey with a <span class="highlight">FREE</span> Palm Analysis.
+        </p>
+  
+        <div class="hero-buttons">
+          <button class="btn-primary">Ask your AI Palmist</button>
+          
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+
+<!-- AOS Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // Animation duration in ms
+    once: true // Only animate once on scroll
+  });
+  
+  
+  
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    menuToggle.classList.toggle('open');
+  });
+  document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+    menuToggle.classList.remove('open');
+  });
+});
+
+
+</script>
+
+</body>
+</html>
