@@ -635,8 +635,7 @@ img {
     flex-direction: row;
     justify-content: space-between;
   }
-
-  .intro-text {
+    .intro-text {
     text-align: left;
   }
 
@@ -935,5 +934,16 @@ img {
   .hr-footer-right {
     flex: 1 1 100%;
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .intro-image img,
+  .why-image img {
+    max-width: 330px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
